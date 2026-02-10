@@ -1,7 +1,24 @@
-import { Header } from "../components";
+import { Card, Header, Input } from "../components";
 
 export function Home() {
     return (
-        <Header />
+        <div className="max-w-360 mx-75 my-50 flex flex-col">
+            <Header />
+
+            <div className="mb-12 mt-[70px]">
+                <div className="mb-3 flex justify-between">
+                    <h2 className="text-title-small text-base-subtitle">Publicações</h2>
+                    <span className="text-base-span text-small">6 publicações</span>
+                </div>
+                <Input placeholder="Buscar conteúdo" className="w-full mb-8" />
+            </div>
+
+            <div className="grid grid-cols-2 gap-8">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </div>
+        </div>
     )
 }
