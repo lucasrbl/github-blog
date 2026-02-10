@@ -5,7 +5,7 @@ import { InfoItem } from "../InfoItem";
 
 export function Header() {
   return (
-    <header className="bg-base-profile rounded-[10px] w-[50%]">
+    <header className="bg-base-profile rounded-[10px] w-full">
       <div className="p-8">
         <div className="flex items-center justify-between mb-2">
             <span className="text-title-large text-base-title font-bold">Cameron Williamson</span>

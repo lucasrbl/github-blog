@@ -2,7 +2,7 @@ type CardProps = {} & React.ComponentProps<'div'>;
 
 export function Card({ ...props }: CardProps) {
     return ( 
-    <div className="bg-base-post rounded-[10px] border-2 border-transparent hover:border-2 hover:border-base-label cursor-pointer w-[50%] group" {...props} >
+    <div className="bg-base-post rounded-[10px] border-2 border-transparent hover:border-2 hover:border-base-label cursor-pointer w-full group" {...props} >
         <div className="m-8">
             <div className="mb-11.5 flex justify-between">
                 <span className="text-base-title text-link transition-all group-hover:text-medium">JavaScript data types and data structures</span>
