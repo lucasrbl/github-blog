@@ -1,10 +1,13 @@
 import { BrowserRouter } from "react-router";
 import { Router } from "./routes/Routes";
+import { UserProvider } from "./contexts/UserContext";
 
 export function App() {
   return (
-    <BrowserRouter>
-      <Router />
-    </BrowserRouter>
+    <UserProvider>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </UserProvider>
   )
 }

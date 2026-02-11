@@ -1,9 +1,17 @@
 import { Card, Header, Input } from "../components";
 import coverImage from "../assets/cover.png";
+import { useEffect } from "react";
+import { useUserContext } from "../contexts/UserContext";
 
 export function Home() {
+    const { fetchUser } = useUserContext();
+
+    useEffect(() => {
+        fetchUser("lucasrbl");
+    }, [])
+    
     return (
-        <>
+        <div>
             <div style={{ backgroundImage: `url(${coverImage})` }} className="h-[300px] w-full bg-cover bg-center"></div>
             <div className="max-w-360 mx-75 -mt-24 mb-50 flex flex-col m-">
                 <Header />
@@ -25,6 +33,6 @@ export function Home() {
                     <Card />
                 </div>
         </div>
-        </>
+        </div>
     )
 }
