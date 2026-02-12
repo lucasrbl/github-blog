@@ -11,7 +11,7 @@ export function Home() {
     }, [])
     
     return (
-        <div>
+        <div className="min-h-screen">
             <div style={{ backgroundImage: `url(${coverImage})` }} className="h-[300px] w-full bg-cover bg-center"></div>
             <div className="max-w-360 mx-75 -mt-24 mb-50 flex flex-col m-">
                 <Header />
