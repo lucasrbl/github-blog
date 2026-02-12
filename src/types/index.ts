@@ -7,3 +7,10 @@ export interface User {
     blog: string
     company: string
 }
+
+export interface Issue {
+    id: number;
+    title: string;
+    createdAt: string;
+    body: string;
+}
